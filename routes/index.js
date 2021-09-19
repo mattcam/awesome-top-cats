@@ -17,7 +17,6 @@ router.get('/', function(req, res, next) {
 	    return _.extend({}, {score:(element.child_friendly+element.stranger_friendly+element.dog_friendly)}, element)
     }),'score'),5)
 
-    console.log(cats);
     res.render('index', {cats:cats});
   });
 
